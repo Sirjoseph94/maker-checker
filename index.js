@@ -1,10 +1,4 @@
-import { User, Request, Approver } from "./maker-checker.js";
-``
-const TYPES = {
-  A: "A",
-  B: "B",
-  C: "C",
-};
+import { User, Request, Approver, TYPES } from "./maker-checker.js";
 
 const user1 = new User('John', [TYPES.A]);
 const user2 = new User('Jane', [TYPES.A, TYPES.B]);
