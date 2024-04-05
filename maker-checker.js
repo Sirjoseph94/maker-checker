@@ -108,7 +108,6 @@ class Approver {
    * @returns {boolean} - True if the request was denied, false otherwise.
    */
   deny() {
-    console.log(this.request.expirationTime);
     if (Request.isExpired(this.request.expirationTime)) {
       return false;
     }

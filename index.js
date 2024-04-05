@@ -12,3 +12,6 @@ if (approver.canApprove()) {
 } else {
   console.log('User cannot approve this request');
 }
+
+const denied = approver.deny()
+console.log(denied ? 'Request denied!' : 'Exceeded time limit');
